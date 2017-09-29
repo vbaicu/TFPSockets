@@ -1,0 +1,24 @@
+{
+  "name": "tfpsockets",
+  "version": "0.1.0",
+  "description": "Simple event based websockets wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "websocktes",
+    "ws",
+    "nodewebsockets",
+    "javascrip",
+    "js",
+    "sockets",
+    "tcp"
+  ],
+  "author": "Viorel Baicu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.0",
+    "ws": "^3.2.0"
+  }
+}
