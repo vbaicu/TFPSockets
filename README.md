@@ -53,7 +53,7 @@ conn.send('eventName',{x:0,y:0})
 
 Client for browser is build on top of WebSocket javascript object. TFPSocketsClient provides access to base socket object via `ws` property and can also be initialised with a pre initialised WebSocket instance using: 
 ```javascript
-var cleint = new TFPSocketsClient(null, null,initilisedWS)
+var client = new TFPSocketsClient(null, null,initilisedWS)
 ```
 
 ## Server
