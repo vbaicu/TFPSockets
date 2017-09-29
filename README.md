@@ -17,7 +17,7 @@ npm install --save tfpSockets
 **Include code - Browser**
 
 ```html 
-<script src="TFPSocketsClient-Browser.js"> <script>
+<script src="TFPSocketsClient-Browser.js"> </script>
 ```
 
 **Include code - Nodejs**
@@ -53,7 +53,7 @@ conn.send('eventName',{x:0,y:0})
 
 Client for browser is build on top of WebSocket javascript object. TFPSocketsClient provides access to base socket object via `ws` property and can also be initialised with a pre initialised WebSocket instance using: 
 ```javascript
-var client = new TFPSocketsClient(null, null,initilisedWS)
+var client = new TFPSocketsClient(null, null,initialisedWS)
 ```
 
 ## Server
@@ -77,7 +77,7 @@ const app = express();
 
 const server = http.createServer(app);
 
-const TFPServer = new TFPSockets.server(server,["chat"])
+const TFPServer = new TFPSocketsServer(server,["chat"])
 
 server.listen(1507, function listening() {
   console.log('Listening on %d', server.address().port);
