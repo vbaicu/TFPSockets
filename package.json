@@ -1,6 +1,6 @@
 {
   "name": "tfpsockets",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simple event based websockets wrapper",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.16.0",
+    "text-encoding": "^0.6.4",
     "ws": "^3.2.0"
   }
 }

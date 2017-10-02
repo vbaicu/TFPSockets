@@ -42,13 +42,29 @@ conn.on('eventName', data => {
     console.log('Received event: ', data.eventName, 'with payload: ', data.payload)
 })
 ```
+
+**Listener for all events**
+
+```javascript
+
+All events will be sent to `message` listener even if there is another listener sent for those events.
+
+conn.on('message', event => {
+    console.log("onMessage received event: ",event)
+  })
+```
+
 **Send Events**
 
-Only supports sending serialisable objects and strings now. 
-Binary data support is in progress.
 
 ```javascript
 conn.send('eventName',{x:0,y:0})
+```
+
+**Send Data**
+
+```javascript
+conn.sendData('eventName',new Uint8Array())
 ```
 
 Client for browser is build on top of WebSocket javascript object. TFPSocketsClient provides access to base socket object via `ws` property and can also be initialised with a pre initialised WebSocket instance using: 
