@@ -111,6 +111,6 @@ TFPServer.on('connection',client => {
 ```
 
 ## Limitations & next steps
-* doesn't support binary data events - WIP
+* ~~doesn't support binary data events - WIP~~
 * ssl certificates setup - WIP
 
