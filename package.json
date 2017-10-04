@@ -1,6 +1,6 @@
 {
   "name": "tfpsockets",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Simple event based websockets wrapper",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,10 @@
     "sockets",
     "tcp"
   ],
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/vbaicu/TFPSockets.git"
+  },
   "author": "Viorel Baicu",
   "license": "MIT",
   "dependencies": {
